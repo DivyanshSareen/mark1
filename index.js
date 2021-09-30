@@ -37,7 +37,7 @@ function welcome(){
 function ask_ques(card, curr_score)
 {
     let res = readlineSync.question(card.question+" ");
-    if(res.toLowerCase() === card.answer)
+    if(res.toLowerCase() === card.answer.toLowerCase())
     {
         console.log("\n+1 (¬‿¬)\n");
         curr_score += 1;
